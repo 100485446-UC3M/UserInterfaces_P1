@@ -13,11 +13,12 @@ header .logo-nombre h1 {
     color: #333;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     left: 50%; /* Lo centra comenzando de la mitad */
+    font-size:1.4rem;
     transform: translateX(-25%);  /* Lo mueve 25% sobre su propio eje */
 }
 
@@ -93,12 +94,13 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     overflow-x: auto;
     gap: 10px;
     width: 100%;
+    padding-left: 50px
 }
 
 .pack {
     min-width: 200px;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 40px;
     text-align: center;
     background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
 }
@@ -113,6 +115,32 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     border-radius: 5px;
 }
 
+.top-block .carousel button.prev,
+.top-block .carousel button.next {
+  font-size: 2.5rem;     /* aumenta el tamaño de las flechas */
+  background: rgba(0,0,0,0.3); /* fondo semi-transparente */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.top-block .carousel button.prev {
+  left: 10px;
+}
+
+.top-block .carousel button.next {
+  right: 10px;
+}
+
 .bottom-block {
     margin-top: 20px;
     padding: 10px;
@@ -120,7 +148,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .bottom-block h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 1.8rem;
 }
 
