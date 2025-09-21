@@ -1,6 +1,6 @@
 /* Estilo del header */
 header {
-    display: flex;
+    display: flex; /* horizontal */
     justify-content: space-between; /* izquierda-centro-derecha */
     align-items: center;
     padding: 5px 20px;
@@ -9,12 +9,12 @@ header {
 }
 
 header .logo-nombre h1 {
-    font-size:2.4rem;
+    font-size:2.4rem;  /* 1 rem = font-size raíz */
     color: #333;
 }
 
 header nav ul {
-    list-style: none;
+    list-style: none; /* Elimina los bulletpoints de la lista */
     display: flex;
     gap: 20px;
     left: 50%; /* Lo centra comenzando de la mitad */
@@ -23,7 +23,7 @@ header nav ul {
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Quita el subrayado del link */
     color: #333;
     font-weight: bold;
 }
@@ -46,9 +46,9 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .left-container{
-    flex: 2;
+    flex: 2; /* ocupa dos fracciones del espacio disponible */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* organiza sus hijos en columna */
     gap: 20px;
 }
 
@@ -61,7 +61,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     align-items: center;         
     justify-content: center;     
     color: white;               
-    font-size: 1.5rem;             /* tamaño del texto */  
+    font-size: 1.5rem;          
     border-bottom: 2px solid #c9c6c6;     
 }
 
@@ -71,7 +71,6 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     padding: 0.1px 10px;
     color: white;               
     font-weight: bold;
-    line-height: 0.4; /* ajusta a tu gusto */
     background: rgba(126, 118, 118, 0.5); /* fondo semitransparente */
 }
 
@@ -91,7 +90,6 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .carousel-items {
     display: flex;
-    overflow-x: auto;
     gap: 10px;
     width: 100%;
     padding-left: 50px
@@ -106,7 +104,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .pack .btn {
-    display: inline-block;
+    display: inline-block;  /* Para modificar el alto y ancho*/
     margin-top: 5px;
     padding: 5px 10px;
     background-color: #0077cc;
@@ -142,13 +140,13 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .bottom-block {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 2px;
+    padding: 5px;
 }
 
 .bottom-block h2 {
-    text-align: center;
-    margin-bottom: 5px;
+    text-align: left;
+    margin-bottom: 10px;
     font-size: 1.8rem;
 }
 
@@ -260,7 +258,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    /*Al sbtn ser un botón y secondary un link, los navegadores aplican distintos estilo, hay que unificar*/
+    /*Al "btn" ser un botón y "secondary un link", los navegadores aplican distintos estilo, hay que unificar*/
     font-family: inherit;    /* hereda la fuente del contenedor */
     font-size: 1rem;         /* unifica el tamaño */
     cursor: pointer;         /* para que <a> también tenga el cambio de cursor */
@@ -293,11 +291,11 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .sidebar-section ul li {
-     margin: 10px 0;
+    margin: 10px 0;
 }
 
 .sidebar-section ul li a {
-     color: #0077cc;
+    color: #0077cc;
     text-decoration: none;
 }
 
