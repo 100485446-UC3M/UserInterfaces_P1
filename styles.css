@@ -1,34 +1,109 @@
 /* Estilo del header */
 header {
-  display: flex;
-  justify-content: space-between; /* izquierda-centro-derecha */
-  align-items: center;
-  padding: 5px 20px;
-  background-color: #f4f4f4e8;
-  border-bottom: 2px solid #c9c6c6;
+    display: flex;
+    justify-content: space-between; /* izquierda-centro-derecha */
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #f4f4f4e8;
+    border-bottom: 2px solid #c9c6c6;
+}
+
+header .logo-nombre h1 {
+    font-size:2.4rem;
+    color: #333;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  left: 50%; /* Lo centra comenzando de la mitad */
-  transform: translateX(-25%);  /* Lo mueve 25% sobre su propio eje */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    left: 50%; /* Lo centra comenzando de la mitad */
+    transform: translateX(-25%);  /* Lo mueve 25% sobre su propio eje */
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
-  color: #0077cc;
+    color: #0077cc;
 }
 
 /* Sección derecha */
 .extras {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-container{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-container {
+    flex: 1;
+}
+
+.top-block .banner {
+    background-image: url('Images/banner.jpg'); 
+    background-size: cover;      /* cubre todo el contenedor */
+    background-position: center; 
+    padding: 20px;               
+    display: flex;               /* para centrar contenido */
+    align-items: center;         
+    justify-content: center;     
+    color: white;               
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* sombra para resaltar texto */
+    font-size: 1.5rem;             /* tamaño del texto */  
+    border-bottom: 2px solid #c9c6c6;     
+}
+
+.top-block .carousel {
+    background-image: url('Images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
+    background-size: cover;      /* cubre todo el contenedor */
+    background-position: center; 
+    padding: 20px;               
+    display: flex;               /* para centrar contenido */
+    align-items: center;         
+    justify-content: center;     
+    color: white;               
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* sombra para resaltar texto */
+    font-size: 1.5rem;             /* tamaño del texto */       
+    margin-top: 10px;
+    position: relative;
+    }
+
+.carousel-items {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    width: 100%;
+}
+
+.pack {
+    min-width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+}
+
+.pack .btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
