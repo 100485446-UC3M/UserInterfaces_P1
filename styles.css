@@ -1,0 +1,34 @@
+/* Estilo del header */
+header {
+  display: flex;
+  justify-content: space-between; /* izquierda-centro-derecha */
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #f4f4f4e8;
+  border-bottom: 2px solid #c9c6c6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  left: 50%; /* Lo centra comenzando de la mitad */
+  transform: translateX(-25%);  /* Lo mueve 25% sobre su propio eje */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
+  color: #0077cc;
+}
+
+/* Sección derecha */
+.extras {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
