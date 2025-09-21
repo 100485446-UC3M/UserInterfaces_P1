@@ -50,9 +50,6 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     flex-direction: column;
     gap: 20px;
 }
-.right-container {
-    flex: 1;
-}
 
 .top-block .banner {
     background-image: url('Images/banner.jpg'); 
@@ -63,22 +60,30 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     align-items: center;         
     justify-content: center;     
     color: white;               
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* sombra para resaltar texto */
     font-size: 1.5rem;             /* tamaño del texto */  
     border-bottom: 2px solid #c9c6c6;     
 }
 
+.top-block .slogan {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.1px 10px;
+    color: white;               
+    font-weight: bold;
+    line-height: 0.4; /* ajusta a tu gusto */
+    background: rgba(126, 118, 118, 0.5); /* fondo semitransparente */
+}
+
 .top-block .carousel {
     background-image: url('Images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
-    background-size: cover;      /* cubre todo el contenedor */
+    background-size: cover;      
     background-position: center; 
     padding: 20px;               
-    display: flex;               /* para centrar contenido */
+    display: flex;             
     align-items: center;         
     justify-content: center;     
     color: white;               
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* sombra para resaltar texto */
-    font-size: 1.5rem;             /* tamaño del texto */       
+    font-size: 1.5rem;                 
     margin-top: 10px;
     position: relative;
     }
@@ -106,4 +111,237 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.bottom-block {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.bottom-block h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* cuadrícula adaptable */
+    gap: 20px;
+}
+
+.experience-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    aspect-ratio: 1 / 1; /* asegura que cada tarjeta sea un cuadrado */
+}
+
+.experience-card img {
+    width: 100%;
+    height: 80%;         /* ocupa 80% de la tarjeta */
+    object-fit: cover;   /* recorta la imagen si no encaja */
+}
+
+.experience-card h3 {
+    margin: 5px 20px;
+    flex-grow: 0;
+    font-size: 1.5rem;
+}
+
+.card-actions {
+    margin-top: 10px;
+    padding: 10px;         /* espacio de los botones con los bordes */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-actions .btn {
+    padding: 10px 5px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;   /* Para que no aparezca subrayado como hyperlink*/
+    border-radius: 10px;      /* Bordes redondeados */
+    font-size: 0.9rem;
+}
+
+.card-actions .like {
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: red; 
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 2px solid #ddd;
+}
+
+/* Caja de login */
+.login-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.login-box h3 {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box .checkbox {
+    margin: 10px 0;
+    font-size: 0.85rem;
+}
+
+.login-box .btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /*Al sbtn ser un botón y secondary un link, los navegadores aplican distintos estilo, hay que unificar*/
+    font-family: inherit;    /* hereda la fuente del contenedor */
+    font-size: 1rem;         /* unifica el tamaño */
+    cursor: pointer;         /* para que <a> también tenga el cambio de cursor */
+    box-sizing: border-box;  /* evita diferencias en cálculo del ancho */
+}
+
+.login-box .btn.secondary {
+    background-color: #555;
+}
+
+/* Secciones */
+.sidebar-section {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(214, 35, 35, 0.1);
+}
+
+.sidebar-section h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+    }
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section ul li {
+     margin: 10px 0;
+}
+
+.sidebar-section ul li a {
+     color: #0077cc;
+    text-decoration: none;
+}
+
+.sidebar-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #292727;
+    padding: 20px 150px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;         /* alinea verticalmente al centro */
+    justify-content: space-between; /* separa los elementos a lo largo del eje horizontal */
+    flex-wrap: wrap;             /* si no caben, se pasan a la siguiente línea */
+    gap: 20px;                   /* espacio entre elementos */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* hace los iconos blancos si son negros */
+}
+
+.newsletter {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+.newsletter button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #005fa3;
 }

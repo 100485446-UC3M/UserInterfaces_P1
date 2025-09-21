@@ -9,7 +9,6 @@
 
 <body>
     <header>
-
         <div class="logo-nombre h1">
             <h1>Descubriendo el Mundo</h1>
         </div>
@@ -39,7 +38,9 @@
              <div class="top-block">
 
                 <div class="banner">
-                    <h2>Descubramos el Mundo Juntos</h2>
+                    <div class="slogan">
+                        <h2>Descubramos el Mundo Juntos</h2>
+                    </div>
                 </div>
 
                 <div class="carousel">
@@ -55,11 +56,117 @@
                     <button class="next">&#10095;</button>
                 </div>
             </div>  
+            <div class="Bottom-block">
+                <h2>Tarjetas de Experiencia</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <img src="Images/experiencia1.webp" alt="Experiencia 1">
+                        <h3>Visita a Roma</h3>
+                        <div class="card-actions">
+                            <a href="registro.html" class="btn">Ver más</a>
+                            <a href="registro.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="Images/experiencia2.jpg" alt="Experiencia 2">
+                        <h3>Aventura en Perú</h3>
+                        <div class="card-actions">
+                            <a href="registro.html" class="btn">Ver más</a>
+                            <a href="registro.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="Images/experiencia3.jpg" alt="Experiencia 3">
+                        <h3>Safari en Kenia</h3>
+                        <div class="card-actions">
+                            <a href="registro.html" class="btn">Ver más</a>
+                            <a href="registro.html" class="like">❤️</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="right-container">
-            <img src="Images/TourEiffelLC.JPG" alt="Imagen de Viaje 1">
+            <div class="login-box">
+                <h3>Acceso</h3>
+                <form action="versionb.html" method="get">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label>
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember">
+                            Recordar credenciales
+                        </div>
+                    </label>
+                    
+                    <button type="submit" class="btn">Iniciar sesión</button>
+                </form>
+                <a href="versiona.html" class="btn secondary">Registro</a>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Top Destinos</h3>
+                <ul>
+                    <li><a href="#">París, Francia</a></li>
+                    <li><a href="#">Tokio, Japón</a></li>
+                    <li><a href="#">Nueva York, USA</a></li>
+                    <li><a href="#">Roma, Italia</a></li>
+                    <li><a href="#">Sídney, Australia</a></li>
+                </ul>
+            </div>
+            <div class = "sidebar-section">
+                <h3>Consejos de Viaje</h3>
+                <ul>
+                    <li><a href="#">Empaca ligero</a></li>
+                    <li><a href="#">Aprende frases básicas del idioma local</a></li>
+                    <li><a href="#">Mantén tus documentos seguros</a></li>
+                    <li><a href="#">Infórmate sobre las costumbres locales</a></li>
+                    <li><a href="#">Contrata un seguro de viaje</a></li>
+                </ul>
+            </div>
+            <div class = "sidebar-section">
+                <h3>Proximos Encuentros</h3>
+                <ul>
+                    <li><a href="#">Madrid, España 09/07</a></li>
+                    <li><a href="#">Paris, Francia 19/08</a></li>
+                    <li><a href="#">Armenia, Colombia 29/09</a></li>
+                    <li><a href="#">Boston, Estados Unidos 12/10</a></li>
+                    <li><a href="#">Valencia, España 17/11</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Descubriendo el Mundo. Todos los derechos reservados.</p>
+
+            <nav class="footer-links">
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Ayuda</a>
+            </nav>
+
+            <div class="social-icons">
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            </div>
+
+            <form class="newsletter">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+
+    </footer>
 </body>
- 
+
 </html>
