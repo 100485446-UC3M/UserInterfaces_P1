@@ -371,3 +371,34 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 .newsletter button:hover {
     background-color: #005fa3;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 2px solid #d6c6c6;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #75a4e6;
+    width: 30%;
+    position: relative;
+    margin: 80px auto; /* lo centra horizontalmente */
+}
+
+.TwoColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+    gap: 12px; /* espacio entre columnas y filas */
+}
+
+.TwoColumns label {
+  display: flex;
+  flex-direction: column; /* etiqueta arriba, input debajo */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
