@@ -40,13 +40,13 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .main-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
 }
 
 .left-container{
-    flex: 2; /* ocupa dos fracciones del espacio disponible */
     display: flex;
     flex-direction: column; /* organiza sus hijos en columna */
     gap: 20px;
@@ -204,7 +204,6 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .right-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
