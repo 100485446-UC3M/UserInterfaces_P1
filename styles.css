@@ -233,12 +233,27 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .login-box input[type="text"],
-.login-box input[type="password"] {
+.login-box input[type="password"],
+.login-box input[type="email"] {
     width: 100%;
     padding: 6px;
     margin-top: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-box input[type="date"] {
+    padding: 6px;
+    margin-top: 4px;
+    margin-left: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box input[type="file"] {
+    padding: 6px;
+    margin-top: 4px;
 }
 
 .login-box .checkbox {
@@ -379,9 +394,19 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     padding: 12px;
     border-radius: 8px;
     background-color: #75a4e6;
-    width: 30%;
+    width: 80%;
     position: relative;
     margin: 80px auto; /* lo centra horizontalmente */
+}
+
+.register-container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.register-container .login-box {
+    box-shadow: none; /* override para que no aparezca */
 }
 
 .TwoColumns {
