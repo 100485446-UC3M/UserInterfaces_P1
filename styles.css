@@ -86,7 +86,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     font-size: 1.5rem;                 
     margin-top: 10px;
     position: relative;
-    }
+}
 
 .carousel-items {
     display: flex;
@@ -235,8 +235,22 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .login-box input[type="text"],
 .login-box input[type="password"],
-.login-box input[type="email"] {
+.login-box input[type="email"],
+.login-box input[type="number"]#card-number {
     width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-box select,
+.login-box input[type="date"],
+.login-box input[type="month"],
+.login-box input[type="submit"],
+.login-box input[type="reset"],
+.login-box input[type="number"]#card-cvv {
     padding: 6px;
     margin-top: 4px;
     border: 1px solid #ccc;
@@ -446,10 +460,9 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     padding: 20px;
 }
 
-.purchase-form {
+.purchase-form-section {
     grid-column: 2;
     grid-row: 1 / span 2;
-    background-color: #222;
 }
 
 html, body {

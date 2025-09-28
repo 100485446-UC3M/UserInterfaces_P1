@@ -34,19 +34,52 @@
 
     <div class="purchase-container">
         <div class="carousel">
-        <div class="carousel-items">
-            <div class="pack">
-                <h3>Visita a Croacia</h3>
-                <p>Descripción del pack</p>
-                <p>Precio: $500</p>
+            <div class="carousel-items">
+                <div class="pack">
+                    <h3>Visita a Croacia</h3>
+                    <p>Descripción del pack</p>
+                    <p>Precio: $500</p>
+                </div>
             </div>
         </div>
-        </div>
-        <div class="purchase-form">
-            <p>b</p>
+        <div class="purchase-form-section login-box">
+            <h2>Formulario de Compra</h2>
+            <form action="#" method="get" id="purchase-form" class="form-container">
+                <div>
+                <label for="Nombre">Nombre completo:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="card-type">Tipo de tarjeta:</label>
+                <select form="purchase-form" name="card-type" id="card-type">
+                    <option>Visa</option>
+                    <option>MasterCard</option>
+                    <option>American Express</option>
+                </select>
+
+                <label for="card-number">Número de la tarjeta:</label>
+                <input type="number" id="card-number" name="card-number" required>
+
+                <label for="card-name">Nombre del titular de la tarjeta:</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <label for="card-expiration">Fecha de caducidad:</label>
+                <input type="month" id="card-expiration" name="card-expiration" required>
+
+                <label for="card-cvv">Código CVV:</label>
+                <input type="number" id="card-cvv" name="card-cvv" maxlength="3" required>
+
+                <label></label>
+                <input type="submit" value="Comprar">
+                <input type="reset" value="Borrar">
+                </div>
+            </form>
         </div>
         <div>
-            <p>c</p>
+            <h2>Descripción del pack</h2>
+            <p>rellenar con la descripción</p>
         </div>
     </div>
 
