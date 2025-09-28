@@ -188,7 +188,8 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     align-items: center;
 }
 
-.card-actions .btn {
+.card-actions .btn,
+.sidebar-section .btn {
     padding: 10px 5px;
     background-color: #0077cc;
     color: white;
@@ -407,6 +408,34 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .register-container .login-box {
     box-shadow: none; /* override para que no aparezca */
+}
+
+.user-section {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 30%;
+    min-width: 100px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.searchbar {
+    grid-column: 1 / span 2;
+    margin-top: 6px;
+}
+
+.searchbar input {
+    height: 100%;
+}
+
+.tip-form {
+    margin-bottom: 8px;
 }
 
 html, body {

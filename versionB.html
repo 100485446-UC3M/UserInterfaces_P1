@@ -90,56 +90,57 @@
         </div>
 
         <div class="right-container">
-            <div class="login-box">
-                <h3>Acceso</h3>
-                <form action="versionb.html" method="get">
-                    <label for="username">Usuario:</label>
-                    <input type="text" id="username" name="username" required>
-
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label>
-                        <div class="checkbox">
-                            <input type="checkbox" id="remember">
-                            Recordar credenciales
-                        </div>
-                    </label>
-                    
-                    <button type="submit" class="btn">Iniciar sesión</button>
-                </form>
-                <a href="versionA.html" class="btn secondary">Registro</a>
+            <div class="sidebar-section user-section">
+                <img class="profile-picture" src="Images/Portrait_Placeholder.png" alt="Foto de perfil">
+                <div>
+                    <h2>Usuario Usuariez</h2>
+                    <a href="#" class="btn">Cerrar Sesión</a>
+                </div>  
             </div>
 
             <div class="sidebar-section">
-                <h3>Top Destinos</h3>
-                <ul>
-                    <li><a href="#">París, Francia</a></li>
-                    <li><a href="#">Tokio, Japón</a></li>
-                    <li><a href="#">Nueva York, USA</a></li>
-                    <li><a href="#">Roma, Italia</a></li>
-                    <li><a href="#">Sídney, Australia</a></li>
-                </ul>
+                <h3>Busca Experiencias</h3>
+                <form action="#" method="get" class="search-form">
+                    <label>
+                        <input type="checkbox" id="America">
+                        América
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Europa">
+                        Europa
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Asia">
+                        Asia
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Africa">
+                        África
+                    </label>
+                    <div class="searchbar">
+                        <input type="search" placeholder="Buscar..." name="Buscar">
+                        <input type="submit" value="&#128270;">
+                    </div>
+                </form>
             </div>
             <div class = "sidebar-section">
-                <h3>Consejos de Viaje</h3>
+                <h3>Últimos Consejos</h3> <!--aqui sí que son enlaces-->
                 <ul>
-                    <li><a href="#">Empaca ligero</a></li>
-                    <li><a href="#">Aprende frases básicas del idioma local</a></li>
-                    <li><a href="#">Mantén tus documentos seguros</a></li>
-                    <li><a href="#">Infórmate sobre las costumbres locales</a></li>
-                    <li><a href="#">Contrata un seguro de viaje</a></li>
+                    <li><a href="#">Cómo elegir el destino ideal</a></li>
+                    <li><a href="#">Las mejores apps de traducción al instante</a></li>
+                    <li><a href="#">Las 10 cosas más importantes que empacar</a></li>
                 </ul>
+                <h3>¿Tienes algún consejo?</h3>
+                <form action="#" method="get" class="tip-form" id="tip-form">
+                    <input type="text" placeholder="Título del consejo" name="tiptitle">
+                    <input type="submit">
+                </form>
+                <textarea name="tip-text" form="tip-form" placeholder="Escríbe aquí tu consejo..."></textarea>
+                <!--el textarea esta asociado al form y su texto será enviado cuando se presione enviar-->
             </div>
             <div class = "sidebar-section">
-                <h3>Proximos Encuentros</h3>
-                <ul>
-                    <li><a href="#">Madrid, España 09/07</a></li>
-                    <li><a href="#">Paris, Francia 19/08</a></li>
-                    <li><a href="#">Armenia, Colombia 29/09</a></li>
-                    <li><a href="#">Boston, Estados Unidos 12/10</a></li>
-                    <li><a href="#">Valencia, España 17/11</a></li>
-                </ul>
+                <h3>Calendario</h3>
+                <p>no se como hacer esto</p>
             </div>
         </div>
     </div>
