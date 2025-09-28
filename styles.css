@@ -438,6 +438,20 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     margin-bottom: 8px;
 }
 
+.purchase-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.purchase-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: #222;
+}
+
 html, body {
     height: 100%;
     margin: 0;
