@@ -74,7 +74,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     background: rgba(126, 118, 118, 0.5); /* fondo semitransparente */
 }
 
-.top-block .carousel {
+.carousel {
     background-image: url('Images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
     background-size: cover;      
     background-position: center; 
