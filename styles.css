@@ -157,7 +157,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -170,24 +170,23 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     flex-direction: column;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.20); /* sombra sutil */
-    aspect-ratio: 1 / 1; /* asegura que cada tarjeta sea un cuadrado */
 }
 
 .experience-card img {
     width: 100%;
-    height: 70%;         /* ocupa 70% de la tarjeta */
+    height: 2fr;         /* ocupa 70% de la tarjeta */
     object-fit: cover;   /* recorta la imagen si no encaja */
-    
+    aspect-ratio: 3 / 2;
 }
 
 .experience-card h3 {
     margin: 5px 20px;
-    flex-grow: 0;
+    width: fit-content;
     font-size: 1.5rem;
 }
 
 .card-actions {
-    margin-top: 10px;
+    margin-top: auto;
     padding: 10px;         /* espacio de los botones con los bordes */
     display: flex;
     justify-content: space-between;
