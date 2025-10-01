@@ -455,7 +455,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .versionCcontainer {
     display: grid;
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 25px;
     gap: 20px;
 }
