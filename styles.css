@@ -10,7 +10,7 @@ header {
 }
 
 header .logo-nombre h1 {
-    font-size:2.4rem;  /* 1 rem = font-size raíz */
+    font-size:auto;
     color: #333;
     display: block;
     white-space: nowrap;
@@ -183,6 +183,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     margin: 5px 20px;
     width: fit-content;
     font-size: 1.5rem;
+    align-self: center;
 }
 
 .card-actions {
@@ -516,64 +517,79 @@ html, body {
   background-color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+
+.menu-toggle {
+  display: none; /* oculto en escritorio */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none; /* el botón hamburguesa no se ve en escritorio */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
     /* estilos para tablet */
         .main-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         padding: 10px;
+        margin: 20px;
+        }
+
+        .experience-grid {
+            grid-template-columns: 1fr ; 
+        }
+
+        .versionCcontainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .purchase-form-section {
+        grid-column: 1;   /* ocupa la primera columna */
+        grid-row: auto;   
+        margin-top: 20px;
     }
 
-    .left-container, .right-container {
-        flex: 1; /* ocupan toda la anchura disponible */
-    }
-
-    .carousel-items {
-        overflow-x: scroll; /* sigue permitiendo scroll horizontal si hay muchas imágenes */
-    }
 }
 
-@media (max-width: 600px) {
-    /* estilos para móvil */
-        .main-container {
-        flex-direction: column;
+@media (width <= 600px) {
+    /* estilos para móvil pequeño */
+    .experience-grid {
+        grid-template-columns: 1fr; 
+        }
+
+    header nav ul {
+        display: none;              
+        flex-direction: column;     
+        background: #ffe1b3;
+        position: absolute;
+        top: 60px;
+        right: 20px;
         padding: 10px;
-    }
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 9999;       
+  }
 
-    .left-container, .right-container {
-        flex: 1; 
-    }
+  .menu-toggle {
+        display: none; /* el checkbox se oculta visualmente */
+  }
 
-    .carousel-items {
-        overflow-x: scroll; 
-    }
+  .menu-icon {
+        display: block; 
+        font-size: 24px;
+        cursor: pointer;
+  }
 
-     header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 10px;
-    }
+  /* Mostrar el menú si el checkbox está marcado */
+  .menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
 
-    nav ul {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .banner {
-        height: 80px; /* banner más pequeño */
-        font-size: 1.2rem;
-    }
-
-    .carousel-items {
-        flex-direction: column; 
-        gap: 10px;
-    }
-
-    .pack-description {
-        font-size: 0.9rem; /* texto más pequeño */
-    }
-
-    .purchase-form-section {
-        width: 100%;
-    }
+        
 }
+
