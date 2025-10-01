@@ -440,11 +440,6 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     min-width: 100px;
 }
 
-.search-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .searchbar {
     grid-column: 1 / span 2;
     margin-top: 6px;
@@ -481,10 +476,12 @@ html, body {
 }
 
 .filtros_contenedor {
-    display: flex;         /* Ponemos columnas una al lado de la otra */
-    gap: 60px;             
+    display: grid;         /* Ponemos columnas una al lado de la otra */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     margin-bottom: 15px;   /* Espacio debajo antes de la barra de búsqueda */
     padding-top: 0px;
+    width: 100%;
 }
 
 .lista_de_opciones {
