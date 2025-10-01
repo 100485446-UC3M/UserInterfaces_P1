@@ -546,7 +546,7 @@ html, body {
 
         .versionCcontainer{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr ;
         }
         .purchase-form-section {
         grid-column: 1;   /* ocupa la primera columna */
