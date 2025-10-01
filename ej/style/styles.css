@@ -58,7 +58,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .top-block .banner {
-    background-image: url('Images/banner.jpg'); 
+    background-image: url('../images/banner.jpg'); 
     background-size: cover;      /* cubre todo el contenedor */
     background-position: center; 
     padding: 20px;               
@@ -80,7 +80,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .carousel {
-    background-image: url('Images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
+    background-image: url('../images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
     background-size: cover;      
     background-position: center; 
     padding: 20px;               
