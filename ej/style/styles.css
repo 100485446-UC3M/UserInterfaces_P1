@@ -563,8 +563,8 @@ html, body {
         }
 
     header nav ul {
-        display: none;              
-        flex-direction: column;     
+        display: none;
+        flex-direction: column;
         background: #ffe1b3;
         position: absolute;
         top: 60px;
@@ -572,7 +572,8 @@ html, body {
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        z-index: 9999;       
+        z-index: 9999;
+        width: fit-content;
   }
 
   .menu-toggle {
